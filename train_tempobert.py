@@ -10,7 +10,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from loguru import logger
 from transformers import Trainer, TrainingArguments
 from transformers.hf_argparser import HfArgumentParser
@@ -94,12 +94,13 @@ class ModelArguments:
             "help": "Time embedding type. Possible values: `prepend_token`, `prepend_nl_token`."
         },
     )
-    gradient_checkpointing: Optional[bool] = field(
-        default=False,
-        metadata={
-            "help": "If True, use gradient checkpointing to save memory at the expense of slower backward pass."
-        },
-    )
+    # gradient_checkpointing: Optional[bool] = field(
+    #     default=False,
+    #     metadata={
+    #         "help": "If True, use gradient checkpointing to save memory at the expense of slower backward pass."
+    #     },
+    # )
+
 
     def __post_init__(self):
         if self.config_overrides is not None and (
@@ -559,5 +560,5 @@ def train_tempobert():
 
 
 if __name__ == "__main__":
-    load_dotenv()
+    # load_dotenv()
     train_tempobert()

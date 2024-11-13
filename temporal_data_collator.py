@@ -4,7 +4,7 @@ from typing import Dict, List, Tuple, Union
 import torch
 from transformers.data.data_collator import (
     DataCollatorForLanguageModeling,
-    _collate_batch,
+    # _collate_batch,
 )
 from transformers.tokenization_utils_base import BatchEncoding
 

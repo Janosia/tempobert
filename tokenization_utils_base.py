@@ -26,11 +26,11 @@ import numpy as np
 import requests
 from transformers.file_utils import (
     PushToHubMixin,
-    cached_path,
-    hf_bucket_url,
-    is_remote_url,
-    is_tf_available,
-    is_torch_available,
+    # cached_path,
+    # hf_bucket_url,
+    # is_remote_url,
+    # is_tf_available,
+    # is_torch_available,
 )
 from transformers.tokenization_utils_base import (
     ADDED_TOKENS_FILE,
@@ -51,9 +51,9 @@ from transformers.tokenization_utils_base import (
     TextInput,
     TextInputPair,
     TruncationStrategy,
-    _is_tensorflow,
-    _is_torch,
-    to_py_obj,
+    # _is_tensorflow,
+    # _is_torch,
+    # to_py_obj,
 )
 from transformers.utils import logging
 
